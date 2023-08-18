@@ -938,7 +938,6 @@
 									"        for (let tags of response.tags){\r",
 									"            pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"            pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"            console.log(response.tags);\r",
 									"        }\r",
 									"\r",
 									"        // let arrayObj = (response).tags;\r",
