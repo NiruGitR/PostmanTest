@@ -1,0 +1,46 @@
+[
+   {
+      "name":"doggie",
+      "photoUrls":[
+         "dolore cillum do"
+      ],
+      "id":9206342,
+      "category":{
+         "id":-86392345,
+         "name":"reprehenderit incididunt Ut"
+      },
+      "tags":[
+         {
+            "id":11986234,
+            "name":"s"
+         },
+         {
+            "id":75726242,
+            "name":"dolor consequat mollit tempor"
+         }
+      ],
+      "status":"available"
+   },
+   {
+      "name":"fish",
+      "photoUrls":[
+         "string"
+      ],
+      "id":920634222,
+      "category":{
+         "id":-8639234555,
+         "name":"reprehenderit"
+      },
+      "tags":[
+         {
+            "id":1198623444,
+            "name":"sss"
+         },
+         {
+            "id":7572624222,
+            "name":"dolor consequat"
+         }
+      ],
+      "status":"available"
+   }
+]

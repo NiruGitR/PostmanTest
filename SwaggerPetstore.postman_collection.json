@@ -211,7 +211,7 @@
 									"variable": [
 										{
 											"key": "petId",
-											"value": "9223372036854762186"
+											"value": ""
 										}
 									]
 								},
@@ -935,8 +935,11 @@
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
-									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"categoryid\"));\r",
-									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
+									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"category\").get(\"id\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"category\").get(\"name\"));\r",
+									"\r",
+									"    /*pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"category.id\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"category.name\")); */\r",
 									"\r",
 									"    for (let tags of response.tags){\r",
 									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
@@ -986,7 +989,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\":-86392345,\n    \"name\":\"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n        \"id\":11986234,\n        \"name\":\"s\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid}},\n      \"name\": \"{{tagsname}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
