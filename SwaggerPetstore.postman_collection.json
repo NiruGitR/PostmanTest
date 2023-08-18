@@ -957,7 +957,10 @@
 							"script": {
 								"exec": [
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
-									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);"
+									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
+									"\r",
+									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
+									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);"
 								],
 								"type": "text/javascript"
 							}
