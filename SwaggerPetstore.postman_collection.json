@@ -953,9 +953,12 @@
 								"exec": [
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
-									"\r",
-									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
-									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);"
+									" \r",
+									"for (var i=0; i < 2; i++)\r",
+									" {\r",
+									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][i]['id']);\r",
+									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][i]['name']);\r",
+									"}"
 								],
 								"type": "text/javascript"
 							}
